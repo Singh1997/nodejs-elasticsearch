@@ -32,7 +32,8 @@ module.exports = {
 	        res.status(500)
 	        return res.json(err)
 	    });
-    },
+	},
+	// Add Document
     addDocument: function(req, res, indexName, _id, docType, payload){
 	    elasticClient.index({
 	        index: indexName,
